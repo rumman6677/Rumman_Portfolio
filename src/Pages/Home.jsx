@@ -16,8 +16,8 @@ const Home = () => {
                 <Banner />
                 <WhatIDo />
                 <Education />
-                <Portfolio />
-                <CounterUp />
+                {/* <Portfolio /> */}
+                {/* <CounterUp /> */}
                 <Blog />
                 {/* <Particless /> */}
                 <Contact />

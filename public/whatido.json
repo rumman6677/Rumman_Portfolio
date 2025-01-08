@@ -4,29 +4,16 @@
         "name": "Web Design",
         "des": "Web design focuses on the visual aesthetics and user experience of a website. It involves creating the layout, color scheme, typography, and graphical elements to ensure a visually appealing and engaging website. "
     },
-    {
-        "image": "https://i.ibb.co/p4ZH0Vg/1-Tw-B7bg-CXlv9rre-V8-b7n-Sg.png",
-        "name": "App Design",
-        "des": "App development refers to the process of creating applications for mobile devices, such as smartphones and tablets. It involves designing, coding, testing, and deploying software applications that run on various operating."
-    },
+
     {
         "image": "https://i.ibb.co/tP78Yth/1-V-Jp13-Lvt-Vc2-Ii-Y2fp4q-Yw.jpg",
         "name": "Web Development",
         "des": "Web development involves the creation and maintenance of websites and web applications. It encompasses various skills and technologies such as HTML, CSS, JavaScript, and backend programming languages."
     },
-    {
-        "image": "https://i.ibb.co/bm4z9gz/ui-ux-principles.jpg",
-        "name": "UI/UX Design",
-        "des": "UI (User Interface) and UX (User Experience) design are essential aspects of creating successful digital products. UI design focuses on the visual elements and interactive."
-    },
+    
     {
         "image": "https://i.ibb.co/p2Vvps3/20-web-design-principles-to-follow-featured-image.webp",
         "name": "Responsive Design",
         "des": "A responsive website is a website that is designed and developed to provide an optimal viewing and user experience across different devices and screen sizes, including ."
-    },
-    {
-        "image": "https://i.ibb.co/LtRckQP/0-I20-Kq-J1jmb20lfef.png",
-        "name": "Dashboard Design",
-        "des": "Dashboard design refers to the visual layout and presentation of data and information in a centralized interface, often used for monitoring and analyzing key metrics."
     }
 ]

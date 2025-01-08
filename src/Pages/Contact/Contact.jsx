@@ -5,9 +5,9 @@ import { FiFacebook, FiLinkedin } from 'react-icons/fi';
 import { FaInstagram } from 'react-icons/fa';
 import { useRef } from 'react';
 import { Fade } from "react-awesome-reveal";
-// import emailjs from '@emailjs/browser';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import emailjs from '@emailjs/browser';
 
 
 const Contact = () => {
@@ -15,15 +15,20 @@ const Contact = () => {
     const form = useRef();
     const sendEmail = (e) => {
         e.preventDefault();
-
-        emailjs.sendForm('service_we8d3jc', 'template_nofci4b', form.current, 'j_ecYPOBb7wFf4Jf7')
-            .then((result) => {
-                console.log(result.text);
-                e.target.rest()
-            }, (error) => {
-                console.log(error.text);
-            });
-    };
+    
+        emailjs
+          .sendForm('service_y3bed1b', 'template_iasnmzo', form.current, {
+            publicKey: '-_qPJJHWFbf4fHZg4',
+          })
+          .then(
+            () => {
+              console.log(result);
+            },
+            (error) => {
+              console.log(error.text);
+            },
+          );
+      };
     return (
         <div className="max-w-[1340px] mx-auto px-3 mb-20">
             <h1 className="text-center mt-10 text-3xl font-bold uppercase text-[#FF024F]">Contact with Me</h1>
@@ -58,6 +63,8 @@ const Contact = () => {
                             <label htmlFor="">YOUR MESSAGE</label><br />
                             <textarea className="w-full p-4 rounded-md my-3 bg-transparent border border-white/10 shadow-md shadow-black/50" name="message" id="" cols="10" rows="10" placeholder='Type your massage'></textarea>
                             <input onClick={notify} className="w-full cursor-pointer shadow-md shadow-black/50 p-4 rounded-md border border-white/20 hover:text-[#FF024F] hover:font-bold duration-300" type="submit" value="SEND MESSAGE" />
+
+
                         </form>
                     </div>
                 </Fade>

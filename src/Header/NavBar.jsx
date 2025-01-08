@@ -13,7 +13,7 @@ const NavBar = () => {
             <div className="flex justify-between items-center py-3 text-gray-300 font-light">
                 <div className="flex gap-2 items-center">
                     <Link to="/"><img className="w-16 cursor-pointer block mx-auto rounded-full border border-gray-700" src={logo} alt="" /></Link>
-                    {/* <h1 className="text-3xl font-extralight text-[#FF024F]"><Link to="/">TOFAEL.</Link></h1> */}
+                    
                 </div>
 
                 <span className='md:hidden'>
@@ -28,9 +28,9 @@ const NavBar = () => {
                     <li className="hover:shadow-slate-400 hover:shadow-inner px-4 py-2 rounded-full duration-300 hover:text-[#FF024F]">
                         <NavLink to="/about" className={({isActive}) => isActive ? "active" : ""}>ABOUT</NavLink>
                     </li>
-                    <li className="hover:shadow-slate-400 hover:shadow-inner px-4 py-2 rounded-full duration-300 hover:text-[#FF024F]">
+                    {/* <li className="hover:shadow-slate-400 hover:shadow-inner px-4 py-2 rounded-full duration-300 hover:text-[#FF024F]">
                         <NavLink to="/portfolio" className={({isActive}) => isActive ? "active" : ""}>PROJECTS</NavLink>
-                    </li>
+                    </li> */}
                     <li className="hover:shadow-slate-400 hover:shadow-inner px-4 py-2 rounded-full duration-300 hover:text-[#FF024F]">
                         <NavLink to="/blog" className={({isActive}) => isActive ? "active" : ""}>BLOG</NavLink>
                     </li>
